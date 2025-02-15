@@ -1,4 +1,4 @@
 # Dev Gotchas
 
-- [Deploy an Express App on AWS Lightsail](DEPLOY-AN-EXPRESS-APP-ON-AWS-LIGHTSAIL.md)
-- [Deploy a NextJS App on AWS EC2](DEPLOY-A-NEXTJS-APP-ON-AWS-EC2.md)
+- [Deploy an Express App on AWS Lightsail](deploy-an-express-app-on-aws-lightsail)
+- [Deploy a NextJS App on AWS EC2](deploy-a-next-js-app-on-aws-ec2)
