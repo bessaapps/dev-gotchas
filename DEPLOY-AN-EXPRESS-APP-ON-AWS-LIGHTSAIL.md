@@ -61,7 +61,7 @@ sudo /opt/bitnami/ctlscript.sh restart apache
 ### Add Environment Variables Variables
 
 ```commandline
-suduo nano .env
+sudo nano .env
 ```
 
 ### Make Changes
