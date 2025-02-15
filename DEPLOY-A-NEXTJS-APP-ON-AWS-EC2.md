@@ -12,20 +12,40 @@ sudo systemctl enable apache2
 Modify files in /etc/apache2/sites-available accordingly and enable and restart, if necessary:
 
 ```commandline
-sudo cp /etc/apache2/sites-avialble/000-default.conf /etc/apache2/sites-avialble/<domain>.conf
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/<domain>.conf
+sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/<domain>-ssl.conf
 ```
 
-Example:
+Example Files:
 ```text
-<VirtualHost _default_:80>
-    ServerAlias *
-    DocumentRoot "/opt/bitnami/projects/myapp"
-    <Directory "/opt/bitnami/projects/myapp">
-        Require all granted
-    </Directory>
-    ProxyPass / http://localhost:3000/
-    ProxyPassReverse / http://localhost:3000/
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/html
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+
+<VirtualHost *:443>
+    ServerAdmin webmaster@localhost
+
+    DocumentRoot /var/www/html
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+    SSLEngine on
+
+    SSLCertificateFile      /etc/ssl/certs/ssl-cert-snakeoil.pem
+    SSLCertificateKeyFile   /etc/ssl/private/ssl-cert-snakeoil.key
+    <FilesMatch "\.(?:cgi|shtml|phtml|php)$">
+        SSLOptions +StdEnvVars
+    </FilesMatch>
+    <Directory /usr/lib/cgi-bin>
+        SSLOptions +StdEnvVars
+    </Directory>
+</VirtualHost>
+
 ```
 
 ```commandline
