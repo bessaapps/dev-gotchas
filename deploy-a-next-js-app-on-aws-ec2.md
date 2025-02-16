@@ -84,12 +84,18 @@ git clone git@gitlab.com:<something>/<something>.git
 
 ## Start App
 
+Add your variables with:
+```commandline
+sudo nano .env
+```
+
 Inside the project:
 
 ```commandline
 npm install
+npm run build
 npx forever start -c "npm start" ./
-sudo /opt/bitnami/ctlscript.sh restart apache
+sudo systemctl restart apache2
 ```
 
 ## Gotchas
@@ -97,12 +103,6 @@ sudo /opt/bitnami/ctlscript.sh restart apache
 ### Cloning your Project
 
 Do not use sudo when cloning your project.
-
-### Add Environment Variables Variables
-
-```commandline
-sudo nano .env
-```
 
 ### Make Changes
 
