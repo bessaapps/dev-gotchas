@@ -65,10 +65,10 @@ sudo apt install nodejs
 sudo apt install npm
 ```
 
-## Install Forever
+## Install PM2
 
 ```commandline
-sudo npm install -g forever 
+sudo npm install pm2 -g 
 ```
 
 ## Clone Project
@@ -89,13 +89,11 @@ Add your variables with:
 sudo nano .env
 ```
 
-Inside the project:
-
+Inside the project run
 ```commandline
 npm install
 npm run build
-npx forever start -c "npm start" ./
-sudo systemctl restart apache2
+pm2 start npm --name nextjs-app -- run start -- -p 3000
 ```
 
 ## Gotchas
@@ -108,5 +106,5 @@ Do not use sudo when cloning your project.
 
 Pull, install, and:
 ```commandline
-npx forever restart -c "npm start" ./
+pm2 restart nextjs-app
 ```
