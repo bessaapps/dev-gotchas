@@ -9,6 +9,8 @@ sudo apt update
 sudo apt install apache2
 sudo systemctl start apache2
 sudo systemctl enable apache2
+sudo a2enmod proxy_http
+sudo systemctl restart apache2
 ```
 
 Modify files in /etc/apache2/sites-available accordingly and enable and restart, if necessary:
