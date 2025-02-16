@@ -1,5 +1,7 @@
 # Deploy a NextJS App on AWS EC2
 
+Create an SSH key pair and upload to AWS before generating an EC2. (You'll need both the private and public keys.) Use this key whe setting up your EC2.
+
 ## Install and Configure Apache
 
 ```commandline
@@ -20,10 +22,12 @@ Example Files:
 ```text
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
-    DocumentRoot /var/www/html
+    DocumentRoot /var/www/html/<project>
 
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
+    ProxyPass / http://localhost:3000/
+    ProxyPassReverse / http://localhost:3000/
 </VirtualHost>
 
 <VirtualHost *:443>
@@ -67,27 +71,30 @@ sudo npm install -g forever
 
 ## Clone Project
 
+Add your public key to GitLab through the Console.
+
 ```commandline
 sudo chown -R $USER /var/www
+git clone git@gitlab.com:<something>/<something>.git
 ```
 
-Use Git to clone
+
+
+## Start App
+
+Inside the project:
 
 ```commandline
 npm install
-```
-
-
-Inside the project:
-```commandline
 npx forever start -c "npm start" ./
-```
-
-```commandline
 sudo /opt/bitnami/ctlscript.sh restart apache
 ```
 
 ## Gotchas
+
+### Cloning your Project
+
+Do not use sudo when cloning your project.
 
 ### Add Environment Variables Variables
 
