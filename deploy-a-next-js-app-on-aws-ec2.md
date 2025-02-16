@@ -45,7 +45,6 @@ Example Files:
         SSLOptions +StdEnvVars
     </Directory>
 </VirtualHost>
-
 ```
 
 ```commandline
@@ -67,6 +66,10 @@ sudo npm install -g forever
 ```
 
 ## Clone Project
+
+```commandline
+sudo chown -R $USER /var/www
+```
 
 Use Git to clone
 
