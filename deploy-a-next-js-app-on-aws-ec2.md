@@ -1,6 +1,6 @@
 # Deploy a NextJS App on AWS EC2
 
-Create an SSH key pair and upload to AWS before generating an EC2. (You'll need both the private and public keys.) Use this key whe setting up your EC2.
+Create an SSH key pair and upload to AWS before generating an EC2. Use this key whe setting up your EC2.
 
 ## Install and Configure Apache
 
@@ -24,10 +24,10 @@ Example Files:
 ```text
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
-    DocumentRoot /var/www/html/<project>
+    DocumentRoot /var/www/<project>
 
-    ErrorLog ${APACHE_LOG_DIR}/error.log
-    CustomLog ${APACHE_LOG_DIR}/access.log combined
+    ...
+    
     ProxyPass / http://localhost:3000/
     ProxyPassReverse / http://localhost:3000/
 </VirtualHost>
@@ -54,7 +54,9 @@ Example Files:
 ```
 
 ```commandline
-sudo systemctl restart apache2
+sudo a2dissite 000-default
+sudo a2ensite <domain>
+sudo systemctl reload apache2
 ```
 
 ## Install Node and NPM
@@ -72,6 +74,10 @@ sudo npm install pm2 -g
 ```
 
 ## Clone Project
+
+```commandline
+ssh-keygen
+```
 
 Add your public key to GitLab through the Console.
 
