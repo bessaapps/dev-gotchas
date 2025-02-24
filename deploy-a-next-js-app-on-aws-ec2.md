@@ -84,10 +84,12 @@ Add your public key to GitLab through the Console.
 
 ```commandline
 sudo chown -R $USER /var/www
+
 git clone git@gitlab.com:<something>/<something>.git
+git fetch
+git checkout <branch>
+git pull
 ```
-
-
 
 ## Start App
 
