@@ -60,6 +60,14 @@ sudo a2ensite <domain>
 sudo systemctl reload apache2
 ```
 
+## Generate an SSL Certificate
+
+```commandline
+sudo apt update
+sudo apt-get install certbot python3-certbot-apache
+sudo certbot --apache
+```
+
 ## Install Node and NPM
 
 ```commandline
