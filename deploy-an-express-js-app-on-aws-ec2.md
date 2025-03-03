@@ -1,4 +1,4 @@
-# Deploy a NextJS App on AWS EC2
+# Deploy an Express.js App on AWS EC2
 
 Be sure to use the desired region.
 
@@ -81,12 +81,12 @@ sudo npm install pm2 -g
 ssh-keygen
 ```
 
-Add your public key to GitLab through the Console.
+Add your public key to GitHub through the Console.
 
 ```commandline
 sudo chown -R $USER /var/www
 
-git clone git@gitlab.com:<something>/<something>.git
+git clone git@github.com:<organization>/<project>.git
 git fetch
 git checkout <branch>
 git pull
@@ -102,8 +102,7 @@ sudo nano .env
 Inside the project run
 ```commandline
 npm install
-npm run build
-pm2 start npm --name nextjs-app -- run start -- -p 3000
+pm2 start npm --name <project> -- run start -- -p 3000
 ```
 
 ## Gotchas
