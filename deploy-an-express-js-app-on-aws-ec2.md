@@ -105,6 +105,11 @@ npm install
 pm2 start index.js --name <project> -- --port 4000
 ```
 
+or, if using Sentry:
+```commandline
+NODE_OPTIONS="--import ./instrument.js" pm2 start index.js --name <project> -- --port 4000
+```
+
 ## Gotchas
 
 ### Cloning your Project
