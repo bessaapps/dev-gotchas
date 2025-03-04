@@ -115,5 +115,5 @@ Do not use sudo when cloning your project.
 
 Pull, install, and:
 ```commandline
-pm2 restart nextjs-app
+pm2 restart <project>
 ```

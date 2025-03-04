@@ -103,7 +103,7 @@ Inside the project run
 ```commandline
 npm install
 npm run build
-pm2 start npm --name nextjs-app -- run start -- -p 3000
+pm2 start npm --name <project> -- run start -- -p 3000
 ```
 
 ## Gotchas
@@ -116,5 +116,5 @@ Do not use sudo when cloning your project.
 
 Pull, install, and:
 ```commandline
-pm2 restart nextjs-app
+pm2 restart <project>
 ```
