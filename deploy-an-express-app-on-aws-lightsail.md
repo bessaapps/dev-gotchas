@@ -2,24 +2,24 @@
 
 Choose the Node.js blueprint when creating a Lightsail instance and connect.
 
-```commandline
+```
 sudo mkdir /opt/bitnami/projects
 sudo chown $USER /opt/bitnami/projects
 ```
 Clone Project
 
-```commandline
+```
 npm install
 ```
 
 Install forever, if it's not already installed.
 
 Inside the project:
-```commandline
+```
 npx forever start -c "npm start" ./
 ```
 
-```commandline
+```
 sudo cp /opt/bitnami/apache/conf/vhosts/sample-vhost.conf.disabled /opt/bitnami/apache/conf/vhosts/sample-vhost.conf
 sudo cp /opt/bitnami/apache/conf/vhosts/sample-https-vhost.conf.disabled /opt/bitnami/apache/conf/vhosts/sample-https-vhost.conf
 ```
@@ -52,7 +52,7 @@ Nano:
   </VirtualHost>
 ```
 
-```commandline
+```
 sudo /opt/bitnami/ctlscript.sh restart apache
 ```
 
@@ -60,14 +60,14 @@ sudo /opt/bitnami/ctlscript.sh restart apache
 
 ### Add Environment Variables Variables
 
-```commandline
+```
 sudo nano .env
 ```
 
 ### Make Changes
 
 Pull, install, and:
-```commandline
+```
 npx forever restart -c "npm start" ./
 ```
 
