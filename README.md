@@ -1,5 +1,7 @@
 # Dev Gotchas
 
+By [Topher](https://www.linkedin.com/in/topherjamesknoll/)
+
 - [Deploy an Express.js App on AWS EC2](deploy-an-express-js-app-on-aws-ec2.md)
 - [Deploy a Next.js App on AWS EC2](deploy-a-next-js-app-on-aws-ec2.md)
 - [Deploy an Express App on AWS Lightsail](deploy-an-express-app-on-aws-lightsail.md)
