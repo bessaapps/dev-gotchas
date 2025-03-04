@@ -31,8 +31,8 @@ Example Files:
 
     ...
     
-    ProxyPass / http://localhost:3000/
-    ProxyPassReverse / http://localhost:3000/
+    ProxyPass / http://localhost:4000/
+    ProxyPassReverse / http://localhost:4000/
 </VirtualHost>
 
 <VirtualHost *:443>
@@ -102,7 +102,7 @@ sudo nano .env
 Inside the project run
 ```commandline
 npm install
-pm2 start npm --name <project> -- run start -- -p 3000
+pm2 start index.js --name <project> -- --port 4000
 ```
 
 ## Gotchas
