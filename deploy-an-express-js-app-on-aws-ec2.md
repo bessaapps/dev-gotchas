@@ -56,7 +56,6 @@ sudo systemctl reload apache2
 Make sure to add the elastic IP address to the DNS records so the app resolves before completing the next steps.
 
 ```commandline
-sudo apt update
 sudo apt-get install certbot python3-certbot-apache
 sudo certbot --apache
 ```
@@ -64,7 +63,6 @@ sudo certbot --apache
 ## Install Node and NPM
 
 ```commandline
-sudo apt update
 sudo apt install nodejs
 sudo apt install npm
 ```
