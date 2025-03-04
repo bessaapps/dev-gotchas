@@ -27,6 +27,8 @@ Example Files:
 ```text
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
+    ServerName <domain>
+    ServerAlias <subdomain>.<domain>
     DocumentRoot /var/www/<project>
 
     ...
@@ -37,7 +39,8 @@ Example Files:
 
 <VirtualHost *:443>
     ServerAdmin webmaster@localhost
-
+    ServerName <domain>
+    ServerAlias <subdomain>.<domain>
     DocumentRoot /var/www/<project>
 
     ...
