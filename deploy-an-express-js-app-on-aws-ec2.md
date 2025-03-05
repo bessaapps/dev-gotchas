@@ -23,7 +23,7 @@ sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-availab
 sudo rm -R /var/www/html
 ```
 
-Example Files:
+Example File:
 ```text
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
@@ -35,16 +35,6 @@ Example Files:
     
     ProxyPass / http://localhost:4000/
     ProxyPassReverse / http://localhost:4000/
-</VirtualHost>
-
-<VirtualHost *:443>
-    ServerAdmin webmaster@localhost
-    ServerName <domain>
-    ServerAlias <subdomain>.<domain>
-    DocumentRoot /var/www/<project>
-
-    ...
-    
 </VirtualHost>
 ```
 
