@@ -19,7 +19,6 @@ Modify files in /etc/apache2/sites-available accordingly and enable and restart,
 
 ```
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/<domain>.conf
-sudo cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/<domain>-ssl.conf
 sudo rm -R /var/www/html
 ```
 
