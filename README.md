@@ -8,11 +8,15 @@ By [Topher](https://www.linkedin.com/in/topherjamesknoll/)
 
 ### React.js
 
-- [Deploy an Express.js App on AWS EC2](deploy-an-express-js-app-on-aws-ec2.md)
 - [Deploy a Next.js App on AWS EC2](deploy-a-next-js-app-on-aws-ec2.md)
-- [Deploy an Express App on AWS Lightsail](deploy-an-express-app-on-aws-lightsail.md)
 - [Before Getting Started with Firebase Storage Inside Next.js](before-getting-started-with-firebase-storage-inside-next-js.md)
 - [Deploying a Next.js App with AWS Elastic Beanstalk and GitLab](deploying-a-nextjs-app-with-aws-elastic-beanstalk-and-gitlab)
+
+### Express.js
+
+- [How to Deploy an Express App to Vercel](how-to-deploy-an-express-app-to-vercel.md)
+- [Deploy an Express.js App on AWS EC2](deploy-an-express-js-app-on-aws-ec2.md)
+- [Deploy an Express App on AWS Lightsail](deploy-an-express-app-on-aws-lightsail.md)
 
 ## MySQL
 
