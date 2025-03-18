@@ -6,6 +6,7 @@ By [Topher](https://www.linkedin.com/in/topherjamesknoll/)
 
 - [How to Automatically Update Users to the Latest Version of your Expo App](how-to-automatically-update-users-to-the-latest-version-of-an-expo-app.md)
 - [Some Expo and EAS Commands for React Native Development](some-expo-and-eas-commands-for-react-native-development.md)
+- [The Additional Android Steps for Expo Notifications](the-additional-android-steps-for-expo-notifications.md)
 
 ### React.js
 
