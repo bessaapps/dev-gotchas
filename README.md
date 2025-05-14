@@ -1,5 +1,3 @@
-By [Topher](https://www.linkedin.com/in/topherjamesknoll/)
-
 ## Javascript
 
 ### React Native
@@ -27,3 +25,11 @@ By [Topher](https://www.linkedin.com/in/topherjamesknoll/)
 ## PHP
 
 - [Before Running Zend on a Mac in the 21st Century](articles/before-running-zend-on-a-mac-in-the-21st-century.md)
+
+## About the Author
+
+With 5+ years of experience with Node.js, Express.js, React.js, Next.js, React Native, MongoDB, and more, I develop full-stack apps that resonate with diverse audiences. My passion is crafting innovative web and mobile app solutions that drive growth across healthcare, finance, marketing, and many other sectors. My goal is to build platforms that engage users while contributing to sustainable business success.
+
+- [Bessa Community Apps](https://bessaapps.com)
+- [Linkedin](https://www.linkedin.com/in/topherjamesknoll)
+
