@@ -28,7 +28,7 @@
 
 ## About the Author
 
-With 5+ years of experience with Node.js, Express.js, React.js, Next.js, React Native, MongoDB, and more, I develop full-stack apps that resonate with diverse audiences. My passion is crafting innovative web and mobile app solutions that drive growth across healthcare, finance, marketing, and many other sectors. My goal is to build platforms that engage users while contributing to sustainable business success.
+With 5+ years of experience with Node.js, Express.js, React.js, Next.js, React Native, MongoDB, and more, Topher develops full-stack apps that resonate with diverse audiences. His passion is crafting innovative web and mobile app solutions that drive growth across healthcare, finance, marketing, and many other sectors. His goal is to build platforms that engage users while contributing to sustainable business success.
 
 - [Bessa Community Apps](https://bessaapps.com)
 - [Linkedin](https://www.linkedin.com/in/topherjamesknoll)
